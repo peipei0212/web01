@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>阿姵旅遊小誌</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+      <div class="logo">
+        <i class="fas fa-map-marked-alt"></i>
+        <span>每日一記</span>
+      </div>
+      <nav>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html" class="nav-link active">首頁</a></li>
+            <li class="nav-item"><a href="destinations.html" class="nav-link">目的地</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">關於我</a></li>
+            <li class="nav-item"><a href="blog.html" class="nav-link">每日一記</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">聯絡</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main></main>
+    <footer></footer>
+</body>
+</html>
+
+css:
+#header {
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2c5aa0;
+}
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+.nav-link:hover, .nav-link.active {
+    color: #2c5aa0;
+}
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    position: relative;
+}
+...
